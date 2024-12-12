@@ -1,6 +1,10 @@
 ktor:
+#    development: true
     application:
         modules:
             - id.deval.ApplicationKt.module
+        watch  :
+            - classes
+            - resources
     deployment:
         port: 8080
